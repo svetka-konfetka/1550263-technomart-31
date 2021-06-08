@@ -14,11 +14,13 @@
   --basic-green: #63A63E;
   --basic-gray:#A9A9A9;
   --basic-light-gray:#F3F7F9;
+  --basic-pale-gray:#E5E5E5;
   --basic-pale-blue:#C5C5C5;
   --basic-dark-red:#BA2732;
   --basic-magenta:#161D29;
   --basic-night-blue:#1D2739;
   --basic-bright-red:#CA2C37;
+  --basic-linen:#F7F3EC;
 }
 
 .body{
@@ -103,6 +105,12 @@ img{
   list-style: none;
 }
 
+.user-navigation1{
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
 .login-link,
 .login-registration{
   background-color:var(--basic-white);
@@ -115,6 +123,29 @@ img{
 
 .login-link:active,
 .login-registration:active{
+  color:var(--basic-pale-blue);
+}
+
+.authorization{
+  background-color:var(--basic-white);
+}
+
+.authorization:active{
+  color:var(--basic-pale-blue);
+}
+
+.ordering,
+.personal-account{
+  color:var(--basic-blue);
+}
+
+.ordering:hover,
+.personal-account:hover{
+  color: var(--basic-red);
+}
+
+.ordering:active,
+.personal-account:active{
   color:var(--basic-pale-blue);
 }
 
@@ -190,7 +221,7 @@ img{
   text-transform: uppercase;
 }
 
-.gallery-list h3{
+.gallery-title{
   font-size:36px;
   line-height: 36px;
   font-weight: 700;
@@ -219,25 +250,76 @@ img{
   background-color: var(--basic-dark-red);
 }
 
+.page-title{
+  font-size:30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+  background-color: var(--basic-light-blue);
+}
+
+.breadcrumbs{
+  font-family:"PT Sans", Arial, sans-serif;
+  font-size:13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.filter{
+  font-family:"PT Sans", Arial, sans-serif;
+}
+
+.filter-title{
+  font-size:13px;
+  line-height: 18px;
+}
+
+.filter-name{
+  font-size:17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-option{
+  font-size:15px;
+  line-height: 19px;
+  list-style: none;
+}
+
+.filter-button{
+  font-size:13px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-pale-gray);
+}
+
 .header-popular-products,
 .header-popular-manufacturers{
   background-color: var(--basic-neutral);
 }
 
-.header-section1{
+.title-section1{
   font-size:30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-blue);
 }
 
-.popular-products-list{
+.popular-products-list,
+.catalog-list{
   font-family:"PT Sans", Arial, sans-serif;
   font-weight: 700;
   list-style: none;
 }
 
-.popular-products-item h3{
+.popular-products-title,
+.catalog-title{
   line-height: 20px;
 }
 
@@ -256,19 +338,68 @@ img{
 }
 
 .popular-manufacturers-list{
-list-style: none;
+  list-style: none;
+}
+
+
+.catalog{
+  font-family:"PT Sans", Arial, sans-serif;
+  font-size:13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-title{
+  font-weight: 400;
+}
+
+.sorting-list{
+  list-style: none;
+}
+
+.sorting-item a{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-item a:hover{
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting-item a:active{
+  color: var(--basic-red);
+  border-bottom: none;
+}
+
+.pagination-list{
+  list-style: none;
+}
+
+.pagination-item a{
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-pale-gray);
+  border-radius: 2px;
+}
+
+.pagination-item a:hover{
+  border: 1px solid var(--basic-pale-blue);
+}
+
+.pagination-item a:active{
+  border: 1px solid var(--basic-red);
 }
 
 .service{
   background-color: var(--basic-light-blue);
 }
 
-.header-section2{
+.title-section2{
   font-size:30px;
   line-height: 30px;
   text-transform: uppercase;
 }
-
 
 .description-service{
   font-family:"PT Sans", Arial, sans-serif;
@@ -380,4 +511,15 @@ text-decoration:none;
   background-color: var(--basic-white);
   border: 2px solid var(--basic-pale-blue);
   border-radius: 2px;
+}
+
+.added{
+  font-size:24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.button1{
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
