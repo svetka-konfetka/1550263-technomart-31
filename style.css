@@ -120,6 +120,7 @@ img{
   }
 
 .header-description{
+  width: 200px;
   font-size:16px;
   line-height: 23px;
   font-style: italic;
@@ -313,16 +314,28 @@ img{
   background-color: var(--basic-dark-red);
 }
 
+.page-catalog {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+}
+
 .page-title{
+  grid-column: 1/-1;
+  margin-bottom: 50px;
   background-color: var(--basic-light-blue);
 }
 
 .breadcrumbs{
+  order: -1;
+  grid-column: 1/-1;
   font-family:"PT Sans", Arial, sans-serif;
   font-size:13px;
   line-height: 18px;
   text-transform: uppercase;
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs a {
@@ -480,6 +493,7 @@ img{
 }
 
 .about-punchers{
+  grid-column: 1/-1;
   background-color: var(--basic-light-blue);
 }
 
