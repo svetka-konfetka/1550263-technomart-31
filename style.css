@@ -352,7 +352,6 @@ img{
   background-color: var(--basic-linen);
 }
 
-
 .filter-name{
   font-size:17px;
   line-height: 30px;
@@ -493,9 +492,8 @@ img{
 }
 
 .about-punchers{
-  grid-column: 1/-1;
   background-color: var(--basic-light-blue);
-}
+  }
 
 .service-list{
   list-style: none;
@@ -548,7 +546,7 @@ img{
 .main-footer-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0px;
+  margin: 0;
   padding: 0;
 }
 
