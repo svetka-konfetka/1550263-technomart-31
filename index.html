@@ -28,8 +28,8 @@
               <input type="search" placeholder="Поиск:">
             </form>
             <ul class="order-list">
-              <li class="order-item"><a href="#">Закладки</a></li>
-              <li class="order-item"><a href="#">Корзина</a></li>
+              <li class="order-item"><a class="order-item-bookmarks" href="#">Закладки: 0</a></li>
+              <li class="order-item"><a class="order-item-basket" href="#">Корзина: 0</a></li>
               <li class="order-item"><a href="#">Оформить заказ</a></li>
             </ul>
           </div>
@@ -44,13 +44,13 @@
             </address>
             <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
           </div>
-          <ul class="user-navigation">
-            <li><a class="login-link" href="blank.html">Войти</a></li>
-            <li><a class="login-registration" href="blank.html">Регистрация</a></li>
+          <ul class="user-navigation-list">
+            <li class="user-navigation-item"><a class="login-link" href="blank.html">Войти</a></li>
+            <li class="user-navigation-item"><a class="login-registration" href="blank.html">Регистрация</a></li>
           </ul>
         </div>
         <div class="main-navigation-wrapper2">
-          <ul class="site-navigation">
+          <ul class="site-navigation-list">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -66,9 +66,9 @@
 
   <main>
     <div class="container">
-      <h1>Компания «Техномарт»</h1>
-      <section class="promo">
-        <h2>Промо-блок</h2>
+      <h1 class="visually-hidden">Компания «Техномарт»</h1>
+      <section class="promo-block">
+        <h2 class="visually-hidden">Промо-блок</h2>
         <ul class="promo-list">
           <li class="promo-item promo-item-material">
             <h3>Материалы</h3>
@@ -82,6 +82,25 @@
             <h3>Техника</h3>
             <a class="promo-button" href="#">Для стройки</a>
           </li>
+          <li class="promo-item promo-item-gallery">
+            <!--<h3 class="gallery-title">Перфораторы</h3>
+              <figure class="gallery-content">
+                <figcaption class="gallery-description">Настоящие мужские игрушки</figcaption>-->
+            <img src="img/slider/hammer-drill.jpg" width="620" height="266" alt="Мужчина работает перфоратором">
+          </li>
+          <!--
+           <li class="gallery-item">
+          <h3 class="gallery-title">Дрели</h3>
+          <figure class="gallery-content">
+            <figcaption class="gallery-description">Соседям на радость!</figcaption>
+            <img src="img/slider/drill.jpg" width="620" height="266" alt="Мужчина работает дрелью">
+          </figure>
+            </li>
+           
+          <button class="gallery-button-back" type="button">Назад</button>
+          <button class="gallery-button-next" type="button">Вперед</button>
+          <a class="button" href="catalog.html">Открыть католог</a>
+         -->
           <li class="promo-item promo-item-sale">
             <h3>Скидки 50%</h3>
             <a class="promo-button" href="#">На 350 товаров</a>
@@ -91,34 +110,13 @@
             <a class="promo-button" href="#">Бесплатно</a>
           </li>
         </ul>
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <h3 class="gallery-title">Перфораторы</h3>
-            <figure class="gallery-content">
-              <figcaption class="gallery-description">Настоящие мужские игрушки</figcaption>
-              <img src="img/slider/hammer-drill.jpg" width="620" height="266" alt="Мужчина работает перфоратором">
-            </figure>
-          </li>
-          <!--
-        <li class="gallery-item">
-          <h3 class="gallery-title">Дрели</h3>
-          <figure class="gallery-content">
-            <figcaption class="gallery-description">Соседям на радость!</figcaption>
-            <img src="img/slider/drill.jpg" width="620" height="266" alt="Мужчина работает дрелью">
-          </figure>
-        </li>
-      -->
-        </ul>
-        <button class="gallery-button-back" type="button">Назад</button>
-        <button class="gallery-button-next" type="button">Вперед</button>
-        <a class="button" href="catalog.html">Открыть католог</a>
       </section>
 
       <section class="popular-products">
         <div class="popular-products-wrapper">
           <div class="header-popular-products">
             <h2 class="title-popular-products">Популярные товары:</h2>
-            <a class="button" href="#">Все популярные товары</a>
+            <a class="button title-popular-products-button" href="#">Все популярные товары</a>
           </div>
           <ul class="popular-products-list">
             <li class="popular-products-item">
@@ -169,7 +167,7 @@
         <div class="popular-manufacturers-wrapper">
           <div class="header-popular-manufacturers">
             <h2 class="title-popular-manufacturers">Популярные производители:</h2>
-            <a class="button" href="#">Все производители</a>
+            <a class="button title-popular-manufacturers-button" href="#">Все производители</a>
           </div>
           <ul class="popular-manufacturers-list">
             <li class="popular-manufacturers-item">
@@ -217,27 +215,33 @@
       </section>
     </div>
 
-    <section class="service">
+    <section class="service-container">
       <div class="container">
-        <h2 class="title-service">Сервисы</h2>
-        <p class="description-service">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <h3 class="title-delivery">Доставка</h3>
-        <p class="description-service">Мы с удовольствием доставим ваш товар прямо<br>
-          к вашему подъезду совершенно бесплатно!<br>
-          Ведь мы неплохо заработаем,<br>
-          поднимая его на ваш этаж!</p>
-        <ul class="service-list">
-          <li class="service-item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="service-item">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="service-item">
-            <a href="#">Кредит</a>
-          </li>
-        </ul>
+        <div class="service-container-wrapper">
+          <div class="service">
+            <h2 class="title-service">Сервисы</h2>
+            <p class="description-service description-service1">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          </div>
+          <ul class="service-list">
+            <li class="service-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="service-item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="service-item">
+              <a href="#">Кредит</a>
+            </li>
+          </ul>
+          <div class="delivery">
+            <h3 class="title-delivery">Доставка</h3>
+            <p class="description-service description-service2">Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -248,7 +252,7 @@
           <p class="description-service">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
             ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.</p>
           <p class="description-service">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:</p>
+            Техномарт работает со многими транспортными компаниями:</p>
           <ul class="description-list">
             <li class="description-item">Деловые линии</li>
             <li class="description-item">Автотрейдинг</li>
@@ -273,7 +277,7 @@
       <div class="container">
         <div class="main-footer-wrapper">
           <section class="footer-contacts">
-            <h2>Как нас найти</h2>
+            <h2 class="visually-hidden">Как нас найти</h2>
             <a>
               <img class="footer-logo" src="img/logo-technomart138x23.svg" width="137" height="22"
                 alt="Логотип «Техномарт»">
@@ -282,7 +286,7 @@
           </section>
 
           <section class="footer-navigation">
-            <h2>Навигация</h2>
+            <h2 class="visually-hidden">Навигация</h2>
             <ul class="footer-navigation-list">
               <li class="footer-navigation-item"><a href="#">Компания</a></li>
               <li class="footer-navigation-item"><a href="#">Новости</a></li>
@@ -309,21 +313,21 @@
           </p>
 
           <section class="footer-social">
-            <h2>Соцсети</h2>
+            <h2 class="visually-hidden">Соцсети</h2>
             <ul class="footer-social-list">
               <li>
                 <a class="social-button" href="#">
-                  <span>Вконтакте</span>
+                  <img src="img/icon/social-network/icon-vk.svg" width="27" height="16" alt="Вконтакте">
                 </a>
               </li>
               <li>
                 <a class="social-button" href="#">
-                  <span>Facebook</span>
+                  <img src="img/icon/social-network/icon-fb.svg" width="12" height="22" alt="Фейсбук">
                 </a>
               </li>
               <li>
                 <a class="social-button" href="#">
-                  <span>Инстаграм</span>
+                  <img src="img/icon/social-network/icon-insta.svg" width="21" height="21" alt="Инстаграм">
                 </a>
               </li>
             </ul>
@@ -343,7 +347,7 @@
   </footer>
 
   <section class="modal">
-    <h2>Обратная связь</h2>
+    <h2 class="visually-hidden">Обратная связь</h2>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="login-form-name">
         <label class="login-name" for="login-name">Ваше имя:</label>
