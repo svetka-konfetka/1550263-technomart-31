@@ -45,7 +45,13 @@
             <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
           </div>
           <ul class="user-navigation-list">
-            <li class="user-navigation-item"><a class="login-link" href="blank.html">Войти</a></li>
+            <li class="user-navigation-item"><a class="login-link" href="blank.html">
+                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
+                  <path
+                    d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"
+                    fill="#C5C5C5" />
+                </svg> Войти</a></li>
             <li class="user-navigation-item"><a class="login-registration" href="blank.html">Регистрация</a></li>
           </ul>
         </div>
@@ -83,24 +89,27 @@
             <a class="promo-button" href="#">Для стройки</a>
           </li>
           <li class="promo-item-gallery">
-            <!--<h3 class="gallery-title">Перфораторы</h3>
-              <figure class="gallery-content">
-                <figcaption class="gallery-description">Настоящие мужские игрушки</figcaption>-->
-            <img src="img/slider/hammer-drill.jpg" width="620" height="266" alt="Мужчина работает перфоратором">
+            <ul class="slider-list">
+              <li class="slider-item slide slide-current">
+                <h3 class="slide-title">Перфораторы</h3>
+                <p class="slide-text">Настоящие мужские игрушки</p>
+                <a class="button slide-button" href="#">Открыть каталог</a>
+              </li>
+              <li class="slider-item slide">
+                <h3 class="slide-title">Дрели</h3>
+                <p class="slide-text">Соседям на радость!</p>
+                <a class="button slide-button" href="#">Открыть каталог</a>
+              </li>
+            </ul>
+            <div class="slider-button">
+              <a class="slider-button-back"  href="#" aria-label="Назад"></a>
+              <a class="slider-button-next"  href="#" aria-label="Вперед"></a>
+            </div>
+            <div class="slider-controls">
+              <button class="current" type="button" aria-label="Первый слайд"></button>
+              <button type="button" aria-label="Второй слайд"></button>
+            </div>
           </li>
-          <!--
-           <li class="gallery-item">
-          <h3 class="gallery-title">Дрели</h3>
-          <figure class="gallery-content">
-            <figcaption class="gallery-description">Соседям на радость!</figcaption>
-            <img src="img/slider/drill.jpg" width="620" height="266" alt="Мужчина работает дрелью">
-          </figure>
-            </li>
-           
-          <button class="gallery-button-back" type="button">Назад</button>
-          <button class="gallery-button-next" type="button">Вперед</button>
-          <a class="button" href="catalog.html">Открыть католог</a>
-         -->
           <li class="promo-item promo-item-sale">
             <h3 class="promo-item-title">Скидки 50%</h3>
             <a class="promo-button" href="#">На 350 товаров</a>
@@ -220,7 +229,8 @@
         <div class="service-container-wrapper">
           <div class="service">
             <h2 class="title-service">Сервисы</h2>
-            <p class="description-service description-service1">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            <p class="description-service description-service1">Хороший интернет-магазин отличается от плохого не только
+              ценами!<br>
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <ul class="service-list">
@@ -258,15 +268,15 @@
             <li class="description-item">Автотрейдинг</li>
             <li class="description-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о компании</a>
+          <a class="button description-button" href="#">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
           <h2 class="title-contacts">Контакты</h2>
-          <p class="description-service">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+          <p class="description-service-contacts">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
           <a href="#"><img src="img/map.png" width="300" height="158"
               alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></a><br>
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>

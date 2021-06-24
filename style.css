@@ -22,6 +22,8 @@
   --basic-bright-red:#CA2C37;
   --basic-linen:#F7F3EC;
   --basic-neutral-gray:#EAEAEA;
+  --basic-gray-blue:#3D546F;
+  --basic-gray-dark-blue:#212A3A;
 }
 
 body{
@@ -102,6 +104,7 @@ img{
 .main-header-logo{
   background-color: var(--basic-red);
   padding: 12px 56px;
+  box-shadow: inset 0 -5px 0 0 var(--basic-dark-red) ;
 }
 
 .main-header-logo:active{
@@ -109,9 +112,11 @@ img{
 }
 
 .search{
-  justify-self:start ;
-  margin: 0;
-  padding: 0;
+  display: block;
+  width: 270px;
+  margin-top: 9px;
+  padding-left: 42px;
+  box-sizing: border-box;
 }
 
 .order-list{
@@ -166,7 +171,7 @@ img{
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 12px;
-  left:20px;
+  left:23px;
   opacity: 0.3;
 }
 
@@ -187,7 +192,7 @@ img{
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 12px;
-  left:26px;
+  left:23px;
   opacity: 0.3;
 }
 
@@ -216,6 +221,7 @@ img{
   min-width: 150px;
   margin: 0;
   padding: 0;
+  padding-left: 30px;
   justify-self: start;
 }
 
@@ -248,13 +254,17 @@ img{
   background-image: url("img/icon/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  left:40px;
+  left:35px;
   top:13px;
 }
 
 .address{
   font-size:14px;
+  margin: 0;
+  padding: 0;
+  margin-top: 3px;
   color:var( --basic-blue);
+  text-align: center;
 }
 
 .user-navigation-list{
@@ -299,8 +309,18 @@ img{
 }
 
 .login-link{
-  padding-left: 45px;
+  margin: 0;
+  padding: 0;
+  padding-left: 19px;
   padding-right: 17px;
+}
+
+.login-link:hover path{
+  fill:var(--basic-gray-blue);
+}
+
+.login-link:active path{
+  fill:var(--basic-pale-blue);
 }
 
 .login-registration{
@@ -395,16 +415,15 @@ img{
   padding: 0;
 }
 
+.promo-item{
+  padding-left: 23px;
+  padding-top: 20px;
+}
 
 .promo-item-title{
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
-}
-
-.promo-item{
-  padding-left: 23px;
-  padding-top: 20px;
 }
 
 .promo-item-material,
@@ -453,7 +472,17 @@ img{
   top:34px;
 }
 
-
+.promo-item-technic::before{
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 62px;
+  background-image: url("img/icon/promo-block/special-equipment.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 191px;
+  top:31px;
+}
 
 .promo-item-sale::before{
   content: "";
@@ -467,6 +496,17 @@ img{
   top:26px;
 }
 
+.promo-item-delivery::before{
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 63px;
+  background-image: url("img/icon/promo-block/path.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 191px;
+  top:32px;
+}
 
 .promo-button{ 
   display: block;
@@ -493,30 +533,114 @@ img{
 }
 
 .promo-item-gallery{
+  position: relative;
   grid-column: span 2;
   grid-row: span 2;
   z-index: 1;
+  background-image: url("img/slider/hammer-drill.png");
+  background-repeat: no-repeat;
 }
 
-.gallery-title{
+.slider-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 24px;
+  margin-top: 23px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
+.slide-title{ 
   font-size:36px;
   line-height: 36px;
   font-weight: 700;
-  background-color: var(--basic-gray);
-  opacity: 0.25;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
-.gallery-description{
-  background-color: var(--basic-gray);
-  opacity: 0.25;
+.slide-text{
+  font-weight: 400;
+  font-size:18px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 113px;
+}
+
+.slide-button{
+  padding: 10px 46px;
+}
+
+.slider-controls {
+  position: absolute;
+  text-align: center;
+  bottom: 36px;
+  left:295px;
+  z-index: 20;
+  display: flex;
+  width: 30px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--basic-red);
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current{
+  background-color: var(--basic-white);
+}
+
+.slider-button {
+  position: absolute;
+  text-align: center;
+  bottom: 104px;
+  left:24px;
+  z-index: -1;
+  display: flex;
+  width: 576px;
+  justify-content: space-between;
+}
+
+.slider-button-back{
+  width: 22px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url("img/icon/form/icon-left.svg");
+  background-repeat: no-repeat;
+}
+
+.slider-button-next{
+  width: 22px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url("img/icon/form/icon-left.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
 
 .button{
+  font-weight: 400;
+  font-size:14px;
+  line-height: 18px;
   background-color: var(--basic-red);
   color: var(--basic-white);
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
 }
 
 .button:hover{
@@ -614,7 +738,6 @@ img{
   margin: 0;
   padding: 0;
   padding-left: 35px;
-  
 }
 
 .filter-button{
@@ -694,6 +817,8 @@ img{
 }
 
 .popular-products-item{
+  display: flex;
+  flex-direction: column;
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
@@ -707,7 +832,8 @@ img{
 }
 
 .popular-products-title{
-  margin-top:8px;
+
+  margin-top:6px;
   margin-right: 17px;
   margin-bottom: 7px;
   margin-left: 18px;
@@ -715,9 +841,11 @@ img{
 }
 
 .popular-products-image{
-  width: 184px;
-  height: 164px;
-  margin: 0;
+  order: -1;
+  width: 144px;
+  height: 128px;
+  margin: 22px auto;
+  padding: 0;
 }
 
 .price{
@@ -726,16 +854,19 @@ img{
   align-items: center;
   font-size:17px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;  
 }
 
 .price-old{
   color:var(--basic-gray);
-  margin-top: 0px;
+  margin-top: 7px;
 }
 
 .price-new{
   color: var(--basic-white);
   background-color: var(--basic-red);
+  padding: 10px 32px;
   margin-top: 13px;
 }
 
@@ -887,6 +1018,19 @@ img{
 .service-container-wrapper{
   display: grid;
   grid-template-columns: 1fr  1fr 1fr;
+  position: relative;
+}
+
+.service-container-wrapper::after{
+  content: "";
+  position: absolute;
+  width: 468px;
+  height: 261px;
+  background-image: url("img/truck.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top:257px;
+  left:471px;
 }
 
 .service{
@@ -913,6 +1057,9 @@ img{
   font-size:21px;
   line-height: 30px;
   font-weight: 700;
+  background-image: url("img/line.png");
+  background-position: 233px 15px;
+  background-repeat: no-repeat;
 }
 
 .service-item a{
@@ -951,6 +1098,7 @@ img{
 }
 
 .description-service,
+.description-service-contacts,
 .about-punchers-description{
   font-family:"PT Sans", Arial, sans-serif;
   font-size:13px;
@@ -983,18 +1131,28 @@ img{
   margin-bottom: 24px;
 }
 
-.description-service{
+.description-service-contacts{
   margin: 0;
+  margin-bottom: 32px;
 }
 
 .description-list{
   list-style:none ;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
+  padding-left: 37px;
 }
 
 .description-item{
   margin-bottom: 12px;
+}
+
+.description-button{
+  padding-top:11px;
+  padding-bottom: 9px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .contacts{
@@ -1007,6 +1165,15 @@ img{
 .contacts img{
   width:300px;
   height:158px;
+  margin-bottom: 25px;
+}
+
+.contacts-button{
+  max-width: 300px;
+  padding-top:11px;
+  padding-bottom: 9px;
+  padding-right: 61px;
+  padding-left: 61px;
 }
 
 .main-footer-teh{
@@ -1022,9 +1189,9 @@ img{
 }
 
 .footer-logo{ 
-  padding: 21px 41px;
+  padding: 20px 41px;
   background-color: var(--basic-red);
- 
+  box-shadow: inset 0 -5px 0 0 var(--basic-dark-red) ;
 }
 
 .address1{
@@ -1108,9 +1275,25 @@ text-decoration:none;
   justify-content: space-between;
   width: 135px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-top: 34px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--basic-gray-dark-blue);
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:active{
+  background-color: var(--basic-red);
 }
 
 .feedback{
