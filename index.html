@@ -25,7 +25,13 @@
               <img src="img/logo-technomart108x18.svg" width="107" height="17" alt="Логотип «Техномарт»">
             </a>
             <form class="search" action="#" method="get">
-              <input type="search" placeholder="Поиск:">
+                <button class="search-button"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                    fill="white" />
+                </svg>
+              </button>
+                <input class="search-text" type="text" placeholder="Поиск:">
             </form>
             <ul class="order-list">
               <li class="order-item"><a class="order-item-bookmarks" href="#">Закладки: 0</a></li>
@@ -140,7 +146,7 @@
             </li>
             <li class="popular-products-item">
               <h3 class="popular-products-title">Перфоратор <span>Bosch</span><br>BFG 3000</h3>
-              <p class="popular-products-image">
+              <p class="popular-products-image popular-products-image-3000">
                 <img src="img/catalog/Bosch-BFG.jpg" width="127" height="112" alt="">
               </p>
               <p class="price">
@@ -150,7 +156,7 @@
             </li>
             <li class="popular-products-item">
               <h3 class="popular-products-title">Перфоратор <span>Bosch</span><br>BFG 6000</h3>
-              <p class="popular-products-image">
+              <p class="popular-products-image popular-products-image-6000">
                 <img src="img/catalog/Bosch-BFG6000.jpg" width="144" height="128" alt="">
               </p>
               <p class="price">
@@ -160,7 +166,7 @@
             </li>
             <li class="popular-products-item">
               <h3 class="popular-products-title">Перфоратор <span>Bosch</span><br>BFG 2000</h3>
-              <p class="popular-products-image">
+              <p class="popular-products-image popular-products-image-2000">
                 <img src="img/catalog/Bosch-BFG.jpg" width="127" height="112" alt="">
               </p>
               <p class="price">
@@ -258,29 +264,29 @@
     <div class="general-information">
       <div class="container">
         <div class="information">
-        <section class="description">
-          <h2 class="title-description">Компания «Техномарт»</h2>
-          <p class="description-service">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
-            ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.</p>
-          <p class="description-service description-service-description ">Мы можем доставить ваш товар в самые
-            отдаленные точки России!<br>
-            Техномарт работает со многими транспортными компаниями:</p>
-          <ul class="description-list">
-            <li class="description-item">Деловые линии</li>
-            <li class="description-item">Автотрейдинг</li>
-            <li class="description-item">ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="button description-button" href="#">Подробнее о компании</a>
-        </section>
+          <section class="description">
+            <h2 class="title-description">Компания «Техномарт»</h2>
+            <p class="description-service">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+              ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.</p>
+            <p class="description-service description-service-description ">Мы можем доставить ваш товар в самые
+              отдаленные точки России!<br>
+              Техномарт работает со многими транспортными компаниями:</p>
+            <ul class="description-list">
+              <li class="description-item">Деловые линии</li>
+              <li class="description-item">Автотрейдинг</li>
+              <li class="description-item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="button description-button" href="#">Подробнее о компании</a>
+          </section>
 
-        <section class="contacts">
-          <h2 class="title-contacts">Контакты</h2>
-          <p class="description-service-contacts">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <a href="#"><img src="img/map.png" width="300" height="158"
-              alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></a><br>
-          <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
-        </section>
-      </div>
+          <section class="contacts">
+            <h2 class="title-contacts">Контакты</h2>
+            <p class="description-service-contacts">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+            <a href="#"><img src="img/map.png" width="300" height="158"
+                alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></a><br>
+            <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
+          </section>
+        </div>
       </div>
     </div>
   </main>
@@ -309,7 +315,7 @@
               <li class="footer-navigation-item1"><a href="#">Материалы</a></li>
               <li class="footer-navigation-item1"><a href="#">Техника</a></li>
               <li class="footer-navigation-item1"><a href="#">Инструмент</a></li>
-              <li class="footer-navigation-item1"><a href="#">Спецпредложение</a></li>
+              <li class="footer-navigation-item1"><a href="#">Спецпредложения</a></li>
             </ul>
           </section>
         </div>
