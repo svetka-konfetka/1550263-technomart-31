@@ -282,12 +282,16 @@ img{
   padding-left: 30px;
   justify-self: start;
   margin-top: 43px;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .contact{
   margin: 0;
   padding: 0;
+}
+
+.contact-catalog{
+  margin-left: 23px;
 }
 
 .tel{  
@@ -321,10 +325,10 @@ img{
   top:10px;
 }
 
-.address{
-  font-size:14px;
+.address{  
   margin: 0;
   padding: 0;
+  font-size:14px;
   margin-top: 3px;
   color:var( --basic-blue);
   text-align: center;
@@ -342,6 +346,8 @@ img{
 }
 
 .user-navigation-item{
+  margin: 0;
+  padding: 0;
   padding-right: 10px;
   margin-top: 46px;
 }
@@ -357,6 +363,8 @@ img{
 }
 
 .user-navigation1{
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 18px;
   list-style: none;
@@ -364,14 +372,32 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   margin-top: 7px;
   margin-left: 45px;
 }
 
-.user-navigation1:first-child a{
-  padding-right: 10px;
+.user-navigation1 li{  
+  position: relative;
+  margin-right: 17px;
+}
+
+.user-navigation1 li:last-child{  
+  margin-right: 0px;
+}
+
+.user-navigation1 li::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  right: -18px;
+  top:7px;
+  border-radius: 50%;
+  background-color: var(--basic-blue);
+}
+
+.user-navigation1 li:last-child::after{
+  display: none;
 }
 
 .login-link{
@@ -409,11 +435,28 @@ img{
   color:var(--basic-pale-blue);
 }
 
-.authorization{
+.user-navigation-list .authorization{
   background-color:var(--basic-white);
+  padding-top: 11px;
   padding-right: 14px;
-  padding-left: 15px;
+  padding-left: 14px;
 }
+
+.authorization span{
+  margin: 0;
+  padding: 0; 
+  padding-left: 19px;
+  padding-right: 17px;
+}
+
+.user-navigation-item:hover path{
+fill: var(--basic-gray-blue);
+}
+
+.user-navigation-item:focus path,
+.user-navigation-item:active path{
+  fill: var(--basic-pale-blue);
+  }
 
 .authorization:active{
   color:var(--basic-pale-blue);
@@ -816,6 +859,8 @@ padding-bottom: 65px;
 }
 
 .filter{
+  margin: 0;
+  padding: 0;
   width: 220px;
 }
 
@@ -826,11 +871,8 @@ padding-bottom: 65px;
 }
 
 .filters-price{
-  margin-bottom: 42px;
-}
-
-.filters:last-child{
-  margin-bottom: 34px;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-name{
@@ -842,7 +884,7 @@ padding-bottom: 65px;
 }
 
 .filter-name-price{
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 
 .range-filter{
@@ -894,6 +936,8 @@ padding-bottom: 65px;
 }
 
 .price-controls {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -917,11 +961,11 @@ padding-bottom: 65px;
 }
 
 .filters-manufactures{
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .filter-name-manufacturers{
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .filter-option{
@@ -932,8 +976,8 @@ padding-bottom: 65px;
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 18px;
-  margin-bottom: 20px;
+  padding-left: 17px;
+  margin-bottom: 21px;
   text-transform: uppercase;
 }
 
@@ -948,9 +992,9 @@ padding-bottom: 65px;
   content: "";
   position: absolute;
   left:-35px;
-  top:-3px;
-  width: 20px;
-  height: 20px;
+  top:-1px;
+  width: 19px;
+  height: 19px;
   border: 2px solid var(--basic-pale-blue);
   border-radius: 5px;
 }
@@ -958,7 +1002,7 @@ padding-bottom: 65px;
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: -1px;
+  top: -2px;
   left: -29px;
   width: 22px;
   height: 17px;
@@ -968,11 +1012,11 @@ padding-bottom: 65px;
 }
 
 .filters-batteries{
-  margin-bottom:20px;
+  margin-bottom:15px;
 }
 
 .filter-name-batteries{
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .filter-radio{
@@ -1009,7 +1053,10 @@ padding-bottom: 65px;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-pale-gray);
   box-sizing: border-box;
-  padding: 10px 79px;
+  padding-right: 79px;
+  padding-left: 78px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .popular-products-wrapper,
@@ -1206,6 +1253,7 @@ padding-bottom: 65px;
   position: relative;
   flex-direction: column;
   width: 220px;
+  height: 318px;
   min-height: 318px;
   margin-right: 20px;
   margin-bottom: 18px;
@@ -1217,23 +1265,6 @@ padding-bottom: 65px;
   margin-right: 0;
 }
 
-.overlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,100,.5);
-  opacity: 0;
-  transition: opacity .3s;
-}
-
-.links{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .catalog-item:hover .overlay{
   opacity: 1;
 }
@@ -1259,8 +1290,24 @@ padding-bottom: 65px;
   width: 144px;
   height: 128px;
   margin: 0;
-  padding-top: 22px;
-  padding-left: 33px;
+  margin-top: 22px;
+  margin-left: 33px;
+}
+
+.catalog-image-3000,
+.catalog-image-2000{
+  width: 127px;
+  height: 112px;  
+  padding: 0;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 53px;
+}
+
+.price-2000 .price-new{
+  margin-top: 40px;
 }
 
 .popular-manufacturers-wrapper{
@@ -1362,13 +1409,13 @@ padding-bottom: 65px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 1px solid var(--basic-pale-gray);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .pagination-item-current a{
   background-color: var(--basic-red);
   color:var(--basic-white);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .pagination-item:last-child a{
@@ -1528,8 +1575,8 @@ padding-bottom: 65px;
 .about-punchers-description{
   margin: 0;
   padding: 0;
-  padding-bottom: 68px;
-  margin-top: 28px;
+  padding-bottom: 70px;
+  margin-top: 25px;
 }
 
 .general-information{
