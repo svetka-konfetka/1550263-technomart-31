@@ -1050,7 +1050,7 @@ padding-bottom: 65px;
 }
 
 .filters-manufactures input:focus ~ label::before {
-  border: 2px solid var(--basic-pale2-gray);
+  border: 2px solid var(--basic-black);
 }
 
 .filters-batteries{
@@ -1105,7 +1105,7 @@ padding-bottom: 65px;
 }
 
 .filters-batteries input:focus ~ label::before {
-  border: 5px solid var(--basic-pale2-gray);
+  border: 5px solid var(--basic-black);
 }
 
 .filter-button{
