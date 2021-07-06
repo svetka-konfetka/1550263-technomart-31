@@ -779,7 +779,7 @@ padding-bottom: 65px;
   grid-template-columns: 220px 1fr;
   column-gap: 20px;
   align-content: start;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .page-catalog .page-title{  
@@ -1152,7 +1152,6 @@ padding-bottom: 65px;
   margin-right: 17px;
   margin-left: 16px;
   text-align: center;
-  
 }
 
 .popular-products-title span{
@@ -1335,9 +1334,21 @@ padding-bottom: 65px;
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   border: 1px solid var(--basic-neutral-gray);
   box-sizing: border-box;
+}
+
+.catalog-item:nth-child(2n)::after{
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url("img/icon/new.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 0;
+  right: 0;
 }
 
 .catalog-item:nth-child(3n){
@@ -1353,10 +1364,12 @@ padding-bottom: 65px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  margin-top:28px;
+  margin: 0;
+  padding: 0;
+  margin-top: 6px;
+  margin-bottom: 8px;
   margin-right: 17px;
-  margin-bottom: 7px;
-  margin-left: 18px;
+  margin-left: 16px;
   text-align: center;
 }
 
@@ -1366,15 +1379,23 @@ padding-bottom: 65px;
 
 .catalog-image{ 
   order: -1;
-  width: 144px;
-  height: 128px;
+  width: 220px;
+  height: 170px;
   margin: 0;
-  margin-top: 22px;
-  margin-left: 33px;
+  margin-bottom: 3px;
+}
+
+.catalog-image img{
+  display: block;
+  position: relative;
+  top: 43%;
+  left: 41%;
+  transform: translate(-40%,-40%);
+  object-fit: cover;
 }
 
 .price-2000 .price-new{
-  margin-top: 34px;
+  margin-top: 30px;
 }
 
 .catalog-item:hover{
@@ -1508,7 +1529,7 @@ padding-bottom: 65px;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .pagination-item{ 
@@ -1821,23 +1842,23 @@ padding-bottom: 65px;
 .footer-navigation-item a{
   display: block;
   color: var(--basic-light-blue);
-  padding-left: 59px;
-  padding-top: 37px;
+  margin-left: 59px;
+  margin-top: 37px;
 }
 
 .footer-navigation-item:nth-child(1) a{
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .footer-navigation-item1 a{
   display: block;
   color: var(--basic-yellow);
-  padding-right: 59px;
-  padding-top: 34px;
+  margin-right: 59px;
+  margin-top: 34px;
 }
 
 .footer-navigation-item1:nth-child(9n) a{
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .footer-navigation-item:hover a,
