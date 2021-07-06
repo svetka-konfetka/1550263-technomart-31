@@ -29,6 +29,8 @@
   --basic-swamp-green:#518534;
   --basic-dark-green:#367315;
   --basic-light2-gray:#F1F1F1;
+  --basic-light2-blue:#283136;
+  --basic-pale2-gray:#B5B5B5;
 }
 
 body{
@@ -119,6 +121,7 @@ img{
 }
 
 .search{
+  display: inline-block;
   position: relative;
   width: 270px;
   margin: 0;  
@@ -646,13 +649,11 @@ padding-bottom: 65px;
 }
 
 .promo-button:hover{
-  background-color: var(--basic-pale-blue);
-  opacity: 0.3;
+  background-color: rgba(197, 197, 197, 0.3);
 }
 
 .promo-button:active{
-  background-color: var(--basic-gray);
-  opacity: 0.3;
+  background-color: rgb(169, 169, 169, 0.3);
 }
 
 .promo-item-gallery{
@@ -779,7 +780,7 @@ padding-bottom: 65px;
   grid-template-columns: 220px 1fr;
   column-gap: 20px;
   align-content: start;
-  margin-bottom: 53px;
+  margin-bottom: 5px;
 }
 
 .page-catalog .page-title{  
@@ -950,10 +951,10 @@ padding-bottom: 65px;
   width:75px;
   padding: 10px;
   text-align: center;
-  color: #283136;
+  color: var(--basic-light2-blue);
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--basic-white);
   font-family: inherit;
   font-size: inherit;
 }
@@ -1009,6 +1010,24 @@ padding-bottom: 65px;
   background-position: 0 0;
 }
 
+.filter-input-checkbox:hover + label::before{
+  border: 2px solid var(--basic-pale2-gray);
+}
+
+.filter-input-checkbox:checked:hover + label::after {
+  background-image: url("img/icon/form/checkmark-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled+ label{
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked:disabled+ label{
+  opacity: 0.4;
+}
+
 .filters-batteries{
   margin-bottom:15px;
 }
@@ -1041,6 +1060,23 @@ padding-bottom: 65px;
   height: 10px;
   background-color: var(--basic-pale-blue);
   border-radius: 50%;
+}
+
+.filter-input-radio:hover + label::before{
+  border: 5px solid var(--basic-pale2-gray);
+}
+
+.filter-input-radio:checked:hover + label::after{
+  background-color: var(--basic-pale2-gray);
+  border-radius: 50%;
+}
+
+.filter-input-radio:disabled+label{
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked:disabled+label{
+  opacity: 0.4;
 }
 
 .filter-button{
@@ -2170,5 +2206,4 @@ text-decoration:none;
   background-color: var(--basic-white);
   outline: #BA2732 1px solid;
 }
-
 
