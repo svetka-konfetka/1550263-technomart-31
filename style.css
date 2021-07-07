@@ -2175,7 +2175,7 @@ text-decoration:none;
   border-top: 7px solid var(--basic-red);
   box-sizing: border-box;  
   padding-top: 66px;
-  background: linear-gradient(to bottom,#FFFFFF 60%,#F4F4F4 60%);
+  background: linear-gradient(to bottom, var(--basic-white) 60%,#F4F4F4 60%);
 }
 
 .added{
