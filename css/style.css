@@ -127,6 +127,7 @@ img{
   margin: 0;  
   padding: 0;
   margin-right: 0;
+  vertical-align: middle;
   box-sizing: border-box; 
 }
 
@@ -137,6 +138,9 @@ img{
 }
 
 .search-text{
+  font-family:"Cuprum", Arial, sans-serif;
+  font-size:18px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
   width: 230px;
@@ -234,7 +238,7 @@ img{
   position: absolute;
   width: 14px;
   height: 16px;
-  background-image: url("img/icon/form/Shape (2).svg");
+  background-image: url("../img/icon/form/shape.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 12px;
@@ -255,7 +259,7 @@ img{
   position: absolute;
   width: 15px;
   height: 15px;
-  background-image: url("img/icon/icon-cart.svg");
+  background-image: url("../img/icon/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 12px;
@@ -318,7 +322,7 @@ a[href^="tel:"]::before{
   position: absolute;
   width: 19px;
   height: 19px;
-  background-image: url("img/icon/icon-phone.svg");
+  background-image: url("../img/icon/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 31px;
@@ -567,7 +571,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 44px;
   height: 65px;
-  background-image: url("img/icon/promo-block/paint-bucket.svg");
+  background-image: url("../img/icon/promo-block/paint-bucket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 213px;
@@ -579,7 +583,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image: url("img/icon/new.svg");
+  background-image: url("../img/icon/new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top:0;
@@ -591,7 +595,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 75px;
   height: 61px;
-  background-image: url("img/icon/promo-block/drill.svg");
+  background-image: url("../img/icon/promo-block/drill.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 194px;
@@ -603,7 +607,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 78px;
   height: 62px;
-  background-image: url("img/icon/promo-block/special-equipment.svg");
+  background-image: url("../img/icon/promo-block/special-equipment.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 191px;
@@ -615,7 +619,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 59px;
   height: 72px;
-  background-image: url("img/icon/promo-block/cart.svg");
+  background-image: url("../img/icon/promo-block/cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 196px;
@@ -627,7 +631,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 78px;
   height: 63px;
-  background-image: url("img/icon/promo-block/path.svg");
+  background-image: url("../img/icon/promo-block/path.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 191px;
@@ -661,7 +665,7 @@ padding-bottom: 65px;
   grid-column: span 2;
   grid-row: span 2;
   z-index: 1;
-  background-image: url("img/slider/hammer-drill.png");
+  background-image: url("../img/slider/hammer-drill.png");
   background-repeat: no-repeat;
 }
 
@@ -744,7 +748,7 @@ padding-bottom: 65px;
   width: 22px;
   height: 40px;
   background-color: transparent;
-  background-image: url("img/icon/form/icon-left.svg");
+  background-image: url("../img/icon/form/icon-left.svg");
   background-repeat: no-repeat;
 }
 
@@ -752,7 +756,7 @@ padding-bottom: 65px;
   width: 22px;
   height: 40px;
   background-color: transparent;
-  background-image: url("img/icon/form/icon-left.svg");
+  background-image: url("../img/icon/form/icon-left.svg");
   background-repeat: no-repeat;
   transform: rotate(180deg);
 }
@@ -828,7 +832,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 8px;
   height: 12px;
-  background-image: url("img/icon/form/icon-right-small.svg");
+  background-image: url("../img/icon/form/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top:2px;
@@ -1026,7 +1030,7 @@ padding-bottom: 65px;
   left: 4px;
   width: 22px;
   height: 17px;
-  background-image: url("img/icon/form/checkmark.svg");
+  background-image: url("../img/icon/form/checkmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1036,7 +1040,7 @@ padding-bottom: 65px;
 }
 
 .filter-input-checkbox:checked:hover + label::after {
-  background-image: url("img/icon/form/checkmark-hover.svg");
+  background-image: url("../img/icon/form/checkmark-hover.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1194,7 +1198,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image: url("img/icon/new.svg");
+  background-image: url("../img/icon/new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 0;
@@ -1338,7 +1342,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 14px;
   height: 16px;
-  background-image: url("img/icon/icon-cart.svg");
+  background-image: url("../img/icon/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 10px;
@@ -1409,7 +1413,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image: url("img/icon/new.svg");
+  background-image: url("../img/icon/new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 0;
@@ -1655,7 +1659,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 468px;
   height: 261px;
-  background-image: url("img/truck.png");
+  background-image: url("../img/truck.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   top:260px;
@@ -1696,7 +1700,7 @@ padding-bottom: 65px;
   position: absolute;
   width: 468px;
   height: 261px;
-  background-image: url("img/line.png");
+  background-image: url("../img/line.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   top:-40px;
@@ -2194,7 +2198,7 @@ text-decoration:none;
   position: absolute;
   width: 66px;
   height: 66px;
-  background-image: url("img/icon/form/icon-mark.svg");
+  background-image: url("../img/icon/form/icon-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top:-18px;
