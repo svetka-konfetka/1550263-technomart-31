@@ -31,6 +31,7 @@
   --basic-light2-gray:#F1F1F1;
   --basic-light2-blue:#283136;
   --basic-pale2-gray:#B5B5B5;
+  --basic-light2-green:#00ca74;
 }
 
 body{
@@ -913,7 +914,7 @@ padding-bottom: 65px;
 .range-controls .bar {
   width: 85%;
   height: 2px;
-  background: #00ca74;
+  background: var(--basic-light2-green);
 }
 
 .range-controls .toggle {
@@ -1186,9 +1187,10 @@ padding-bottom: 65px;
   position: relative;
   flex-direction: column;
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding-bottom: 21px;
   border: 1px solid var(--basic-neutral-gray);
   box-sizing: border-box;
 }
@@ -1265,7 +1267,6 @@ padding-bottom: 65px;
 
 .price-new{
   position: relative;
-  float: left;
   padding-right: 26px;
   padding-left: 32px;
   padding-top: 10px;
@@ -1719,18 +1720,19 @@ padding-bottom: 65px;
   padding-bottom: 18px;
 }
 
-.service-item:hover a{
-  background-color: var(--basic-dark-blue);
+.service-item a{
+  color:var(--basic-white);
+  background-color: var(--basic-blue);
 }
 
-.service-item:active a{
+.service-item-current a{
   background-color: var(--basic-white);
   color: var(--basic-blue);
 }
 
-.service-item a{
-  color:var(--basic-white);
-  background-color: var(--basic-blue);
+.service-item:hover a{
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-white);
 }
 
 .title-contacts,
@@ -1772,23 +1774,23 @@ padding-bottom: 65px;
   margin: 0;
   padding: 0;
   background-color: var(--basic-light-blue);
-
+  margin-top: 52px;
   }
 
 .title-about-punchers{
-  padding-top: 64px;
+  padding-top: 65px;
 }
 
 .about-punchers-description{
   margin: 0;
   padding: 0;
   padding-bottom: 70px;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 .general-information{
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 }
 
 .information{
